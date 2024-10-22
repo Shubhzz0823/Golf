@@ -61,18 +61,17 @@ gsap.from("#about-us img,#about-us-in", {
     scrub: 1,
   },
 });
-gsap.from(".card", {
+gsap.from("#cards-container", {
   scale: 0.8,
-  // opacity:0,
+  opacity: 0,
   duration: 1,
-  stagger: 0.1,
+  // stagger: 0.4,
   scrollTrigger: {
-    trigger: ".card",
+    trigger: "#cards-container",
     scroller: "body",
-    // markers:false,
     start: "top 70%",
     end: "top 65%",
-    scrub: 1,
+    scrub: 3,
   },
 });
 gsap.from("#colon1", {
